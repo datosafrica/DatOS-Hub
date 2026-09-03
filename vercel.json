@@ -1,0 +1,20 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/academy",   "destination": "/academy.html"   },
+    { "source": "/solutions", "destination": "/solutions.html" },
+    { "source": "/proof",     "destination": "/proof.html"     },
+    { "source": "/contact",   "destination": "/contact.html"   }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options",        "value": "DENY"    },
+        { "key": "Referrer-Policy",        "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DatOS — Contact Us</title>
+  <meta name="description" content="Get in touch with DatOS. Training enquiries, analytics projects, or just a conversation about your data."/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><img src="assets/logo-navy.png" alt="DatOS Hub" class="logo-img"/></a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academy.html">Academy</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="proof.html">Proof</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/2348160028102?text=Hi%20DatOS%2C%20I%27d%20like%20to%20get%20in%20touch" target="_blank" class="btn btn--green nav__cta">WhatsApp Us</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li><a href="academy.html" class="mobile-link">Academy</a></li>
+        <li><a href="solutions.html" class="mobile-link">Solutions</a></li>
+        <li><a href="proof.html" class="mobile-link">Proof</a></li>
+        <li><a href="contact.html" class="mobile-link">Contact</a></li>
+        <li class="mobile-cta"><a href="https://wa.me/2348160028102?text=Hi%20DatOS%2C%20I%27d%20like%20to%20get%20in%20touch" target="_blank" class="btn btn--green btn--full">WhatsApp Us →</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner">
+        <span class="eyebrow">Contact</span>
+        <h1 class="page-hero__title">Let's talk <em>about your data.</em></h1>
+        <p class="page-hero__sub">Training enquiry, analytics project, or just a conversation about what your business needs — we reply within 24 hours.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <h3>Fastest way to reach us</h3>
+        <p class="contact__info-sub">WhatsApp is where we respond fastest — usually within a few hours.</p>
+        <div class="contact__channels">
+          <a href="https://wa.me/2348160028102?text=Hi%20DatOS%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" class="contact__channel">
+            <div class="contact__channel-icon" style="background:rgba(37,211,102,0.12);color:#25d366;"><i class="fa-brands fa-whatsapp"></i></div>
+            <div><strong>WhatsApp</strong><span>08160028102 · Fastest response</span></div>
+            <i class="fa-solid fa-arrow-right contact__channel-arrow"></i>
+          </a>
+          <a href="tel:08160028102" class="contact__channel">
+            <div class="contact__channel-icon" style="background:var(--green-light);color:var(--green);"><i class="fa-solid fa-phone"></i></div>
+            <div><strong>Phone</strong><span>08160028102</span></div>
+            <i class="fa-solid fa-arrow-right contact__channel-arrow"></i>
+          </a>
+          <a href="mailto:datos.africa@gmail.com" class="contact__channel">
+            <div class="contact__channel-icon" style="background:rgba(0,166,126,0.1);color:var(--green);"><i class="fa-solid fa-envelope"></i></div>
+            <div><strong>Email</strong><span>datos.africa@gmail.com</span></div>
+            <i class="fa-solid fa-arrow-right contact__channel-arrow"></i>
+          </a>
+          <a href="https://linkedin.com/in/nnaemekadestinedike" target="_blank" class="contact__channel">
+            <div class="contact__channel-icon" style="background:rgba(10,102,194,0.1);color:#0a66c2;"><i class="fa-brands fa-linkedin"></i></div>
+            <div><strong>LinkedIn</strong><span>Destine Nnaemeka Dike</span></div>
+            <i class="fa-solid fa-arrow-right contact__channel-arrow"></i>
+          </a>
+        </div>
+        <div class="contact__note-label">What to include in your message:</div>
+        <ul class="contact__note-list">
+          <li><i class="fa-solid fa-check"></i> Whether you're interested in training or a solution</li>
+          <li><i class="fa-solid fa-check"></i> A short description of your team or business</li>
+          <li><i class="fa-solid fa-check"></i> Your timeline or urgency</li>
+        </ul>
+      </div>
+
+      <div class="contact__form-wrap">
+        <h3>Send a message</h3>
+        <p class="contact__form-sub">We'll reply to your email within 24 hours.</p>
+        <form class="contact__form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Tunde Adeyemi" required/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@company.com" required/>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp (optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 08012345678"/>
+          </div>
+          <div class="form-group">
+            <label for="interest">I'm interested in</label>
+            <select id="interest" name="interest">
+              <option value="Academy training">Academy training</option>
+              <option value="Corporate training (team)">Corporate training (team)</option>
+              <option value="Dashboard build">Dashboard build</option>
+              <option value="Analytics retainer">Analytics retainer</option>
+              <option value="Inventory management system">Inventory management system</option>
+              <option value="Other / not sure yet">Other / not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your team, your data challenge, or what you're hoping to achieve." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--green btn--full">Send Message →</button>
+          <div class="form-success" id="formSuccess"><i class="fa-solid fa-circle-check"></i> Message sent — we'll reply within 24 hours.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container newsletter__inner">
+      <h2>Stay ahead of the data curve</h2>
+      <p>Get analytics tips, course updates, and early access to new programmes — straight to your inbox.</p>
+      <form class="newsletter__form" id="newsletterForm">
+        <input type="email" class="newsletter__input" name="email" placeholder="Your email address" required/>
+        <button type="submit" class="btn btn--white">Subscribe</button>
+      </form>
+      <div class="newsletter__success" id="newsletterSuccess"><i class="fa-solid fa-circle-check"></i> You're in — we'll be in touch soon.</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand"><img src="assets/logo-white.png" alt="DatOS Hub" class="logo-img--white"/><p>The Data Operating System for African Business.</p><div class="footer__socials"><a href="https://wa.me/2348160028102?text=Hi%20DatOS%2C%20I%27d%20like%20to%20chat" target="_blank"><i class="fa-brands fa-whatsapp"></i></a><a href="https://linkedin.com/in/nnaemekadestinedike" target="_blank"><i class="fa-brands fa-linkedin"></i></a><a href="mailto:datos.africa@gmail.com"><i class="fa-solid fa-envelope"></i></a></div></div>
+      <div class="footer__col"><h4>Company</h4><ul><li><a href="academy.html">Academy</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="proof.html">Proof of Work</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer__col"><h4>Programmes</h4><ul><li><a href="academy.html">Excel + SQL + Power BI</a></li><li><a href="academy.html">Full Analytics Track</a></li><li><a href="academy.html">Python + Power BI</a></li><li><a href="academy.html">Corporate Training</a></li></ul></div>
+      <div class="footer__col"><h4>Contact</h4><ul><li><a href="https://wa.me/2348160028102?text=Hi%20DatOS%2C%20I%27d%20like%20to%20chat" target="_blank"><i class="fa-brands fa-whatsapp"></i> 08160028102</a></li><li><a href="mailto:datos.africa@gmail.com"><i class="fa-solid fa-envelope"></i> datos.africa@gmail.com</a></li></ul></div>
+    </div>
+    <div class="container footer__bottom"><span>© 2026 DatOS. Built in Nigeria. Operating across Africa.</span><span>datos.africa@gmail.com · 08160028102</span></div>
+  </footer>
+
+  <a href="https://wa.me/2348160028102?text=Hi%20DatOS%2C%20I%27d%20like%20to%20chat" target="_blank" class="wa-float"><i class="fa-brands fa-whatsapp"></i><span class="wa-float__tooltip">Chat with us</span></a>
+  <a href="#" class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
+  <script src="script.js"></script>
+</body>
+</html>
