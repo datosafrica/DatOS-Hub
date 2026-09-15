@@ -82,7 +82,7 @@ if (contactForm) {
     btn.textContent = 'Sending…';
     btn.disabled = true;
     setTimeout(() => {
-      window.location.href = `mailto:datos.africa@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:datoshub.ng@gmail.com?subject=${subject}&body=${body}`;
       btn.textContent = 'Send Message →';
       btn.disabled = false;
       if (success) {
@@ -108,7 +108,7 @@ if (newsletterForm) {
     const subject = encodeURIComponent('New newsletter subscriber');
     const body    = encodeURIComponent(`New subscriber: ${email}`);
     setTimeout(() => {
-      window.location.href = `mailto:datos.africa@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:datoshub.ng@gmail.com?subject=${subject}&body=${body}`;
       btn.textContent = 'Subscribe';
       btn.disabled = false;
       if (success) { success.classList.add('show'); newsletterForm.reset(); }
